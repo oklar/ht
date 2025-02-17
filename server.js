@@ -28,6 +28,7 @@ app.put("/item", (req, res) => {
 
 app.listen(3000, () => console.log("Server running on http://localhost:3000"));
 
+// Notify browser when files change
 liveReloadServer.server.once("connection", () => {
   setTimeout(() => {
     liveReloadServer.refresh("/");
