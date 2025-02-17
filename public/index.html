@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/pico.jade.min.css" />
+    <script src="scripts.js"></script>
+  </head>
+  <body>
+    <form action="/item" method="PUT" target="content">
+      <input type="text" name="item" />
+      <button type="submit">Update</button>
+    </form>
+
+    <button action="/item" method="DELETE" target="content">Delete</button>
+
+    <a href="/item" method="PATCH" target="content"> Edit </a>
+
+    <div id="content">CONTENT FTW</div>
+  </body>
+</html>
